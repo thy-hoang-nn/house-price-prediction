@@ -8,7 +8,9 @@ import pandas as pd
 from loguru import logger
  
 # Creating FastAPI instance
-app = FastAPI()
+app = FastAPI(
+    root_path='/ocr_service'
+)
  
 # Creating class to define the request body
 # and the type hints of each attribute
